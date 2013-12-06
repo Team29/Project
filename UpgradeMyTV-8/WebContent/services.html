@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TV Archade - Services</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div class="header">
+    <div class="logo"> <img src="images/logo.jpg" alt="" /> </div>
+    <div class="clear"></div>
+  </div>
+    <div class="menuZone">
+      <div class="menuleft">
+        <div class="menuright">
+          <div class="mainmenu">
+            <ul>
+              
+								<li class="first"><a href="index.html">Home</a></li>
+								<li><a href="jspresults/upgradeTV.jsp">Upgrade My TV</a></li>
+								<li><a class="current" href="services.html">Compare TV's</a></li>
+								<li><a href="jspresults/sell.jsp">Sell Your TV</a></li>
+								<li><a href="contact_us.html">Contact Us</a></li>
+								<li><a href="privacy.html">Privacy</a></li>
+							
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="picHeading1"> LCD TV </div>
+    <div class="picHeading2"> PLASMA TV </div>
+    <div class="picHeading3"> FLAT TV </div>
+    <div class="clear"></div>
+  </div>
+  <div id="mainContainer" style ="margin-left:260px;">
+    <div class="primary1">
+      <h1>PRODUCT LIST</h1>
+      <div class="leftLinks">
+        <div class="productheading">LCD TV </div>
+        <div class="leftMenu">
+           <ul>
+            <li><a href="SonyPage.html">SONY</a></li>
+            <li><a href="Hitachi.html">Hitachi</a></li>
+            <li><a href="LG.html">LG</a></li>
+            <li><a href="PhilipsPage1.html">Philips</a></li>
+            <li><a href="Sharp.html">Sharp</a></li>
+            <li><a href="Samsung.html">Samsung</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="leftLinks">
+        <div class="productheading">PLASMA TV </div>
+        <div class="leftMenu">
+          <ul>
+            <li><a href="Hitachi.html">Hitachi</a></li>
+            <li><a href="LG.html">LG</a></li>
+            <li><a href="PhilipsPage1.html">Philips</a></li>
+            <li><a href="Samsung.html">Samsung</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="leftLinks">
+        <div class="productheading">FLAT TV </div>
+        <div class="leftMenu">
+           <ul>
+            <li><a href="SonyPage.html">SONY</a></li>
+            <li><a href="LG.html">LG</a></li>
+            <li><a href="Hitachi.html">Hitachi</a></li>
+            <li><a href="Sharp.html">Sharp</a></li>
+            <li><a href="PhilipsPage1.html">Philips</a></li>
+            <li><a href="Pioneer.html">Pioneer</a></li>
+            <li><a href="Samsung.html">Samsung</a></li>
+
+            </ul>
+        </div>
+      </div>
+      <div class="leftLinks">
+        <div class="productheading">HD TV </div>
+        <div class="leftMenu">
+           <ul>
+            <li><a href="LG.html">LG</a></li>
+            <li><a href="Hitachi.html">Hitachi</a></li>
+            <li><a href="Samsung.html">Samsung</a></li>
+            <li><a href="SonyPage.html">Sony</a></li>
+           </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="primary2">
+      <div class="secondary"> <img src="images/pic1.jpg" alt="" />
+        <div class="picText">Intelligent Fashion Icon </div>
+      </div>
+      <div class="secondary"> <img src="images/pic2.jpg" alt="" />
+        <div class="picText">A New Dimension in Design</div>
+      </div>
+      <div class="secondary"> <img src="images/pic3.jpg" alt="" />
+        <div class="picText">Experience the XD Technology </div>
+      </div>
+      <div class="greyDarkbar">
+        <div class="greyLeftbar">
+          <div class="greyRightbar">
+            <h2>Comparison For You</h2>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+      <div>
+        <div class="plazmamidbg">
+          <div class="plazmatopbg">
+            <div class="plazmabottombg" style="width:620px;">
+              <div>
+                <div style="padding:20px 10px 20px 15px;">
+                 <div id="container" style="width:100%; height:400px;"></div>
+    <script type="text/javascript">
+    $(function () { 
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Annual Cost Based on the Power Consumption By TV Brands and Types'
+            },
+            xAxis: {
+                categories: ['Sony', 'LG', 'Samsung', 'Hitachi', 'Pioneer', 'Philips', 'Sharp']
+            },
+            yAxis: {
+                title: {
+                    text: 'Annual Power Cost'
+                }
+            },
+            series: [{
+                name: 'LED',
+                data: [10.3, 16.49, 5.07, 14.28, 23.63,9.8,9.97]
+            }, {
+                name: 'LCD',
+                data: [24.33, 25.03, 23 ,39.58 ,49.5 ,19.65 ,27.2]
+            },
+            {
+                name: 'Plasma',
+                data: [78.92 ,15.03 ,13.85 ,72.4 ,63.19 ,67.06 ,88.2]
+            },
+            {
+                name: 'CRT',
+                data: [41.03 ,17.4 ,27.03 ,22.08 ,17.64 ,10.92 ,16.44]
+            }]
+        });
+    });
+    </script> 
+                    <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+        <h3 style="margin-left:300px;">NEW MODELS</h3>
+  
+  <div class="modelsMid">
+    <div class="modelLeft">
+      <div class="modelRight">
+        <div class="ModelContainer">
+          <div class="arrowleft"> <a href="http://all-free-download.com/free-website-templates/"><img src="images/path.png" alt="" border="0" /></a> </div>
+          <div class="productscroll">
+            <div class="productimg"><a href="http://all-free-download.com/free-website-templates/"><img src="images/model1.jpg" alt="" border="0" /></a>
+              <div class="modelText">LA46A610</div>
+            </div>
+            <div class="productimg"><a href="http://all-free-download.com/free-website-templates/"><img src="images/model2.jpg" alt="" border="0" /></a>
+              <div class="modelText">LA32RB98</div>
+            </div>
+            <div class="productimg"><a href="http://all-free-download.com/free-website-templates/"><img src="images/model3.jpg" alt="" border="0" /></a>
+              <div class="modelText">PS63NB98</div>
+            </div>
+            <div class="productimg"><a href="http://all-free-download.com/free-website-templates/"><img src="images/model4.jpg" alt="4" border="0" /></a>
+              <div class="modelText">CZ21N30</div>
+            </div>
+            <div class="productimg"><a href="http://all-free-download.com/free-website-templates/"><img src="images/model5.jpg" alt="" border="0" /></a>
+              <div class="modelText">PS50A4596</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="arrowright"> <a href="http://all-free-download.com/free-website-templates/"><img src="images/path1.png" alt="" border="0" /></a> </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  <div class="clear"></div>
+  </body>
+</html>
